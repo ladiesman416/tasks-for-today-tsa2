@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>POS System</title>
+    <title>Tasks for Today</title>
     <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
 </head>
 <body>
@@ -16,10 +16,13 @@
            <label for="nav-toggle" class="nav-burger">&#9776;</label>
 
         <div class="nav-links">
-            <a href="<?= site_url('/') ?>">Home</a>
-            <a href="<?= site_url('about') ?>">About</a>
-            <a href="<?= site_url('customers') ?>">Customers</a>
-            <a href="<?= site_url('users') ?>">Users</a>
+           <a href="<?= site_url('/') ?>">Home</a>
+  <a href="<?= site_url('tasks') ?>">Tasks</a>
+  <a href="<?= site_url('profile') ?>">Profile</a>
+  <a href="<?= site_url('about') ?>">About</a>
+  <?php if (session()->get('isLoggedIn')): ?>
+      <a href="<?= site_url('tasks/new') ?>">New Task</a>
+  <?php endif; ?>
         </div>
 
         <div class="nav-auth">
@@ -38,7 +41,7 @@
 </main>
 
 <footer class="footer">
-    IT0049 Web System Technologies &middot; POS System
+    IT0049 Web System Technologies &middot; Tasks for Today
 </footer>
 
 </body>

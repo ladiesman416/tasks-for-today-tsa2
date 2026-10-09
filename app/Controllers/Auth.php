@@ -11,9 +11,10 @@ class Auth extends BaseController
     public function login()
     {
         if (session()->get('isLoggedIn')) {
-            return redirect()->to('/customers');
+            return redirect()->to('/tasks');
         }
-        return view('auth/login');
+
+            return view('auth/login');
     }
 
     public function attempt()
@@ -44,7 +45,7 @@ class Auth extends BaseController
             'username'   => $user['username'],
         ]);
 
-        return redirect()->to('/customers');
+          return redirect()->to('/tasks');
     }
 
     public function logout()
