@@ -2,7 +2,7 @@
 
 **Course:** IT0049 Web System Technologies
 **Author:** Kyle Rianne Andrei Dionio ([@ladiesman416](https://github.com/ladiesman416))
-**Live site:** _add your hosted link here_
+**Live site:**http://pos-kyle.gt.tc/tsa2/
 
 A task management web app built with **CodeIgniter 4** and **MySQL**. Anyone can view the public pages, but only a logged-in user can create, edit or delete tasks. Deleting a task is a **soft delete**: the row stays in the database and is only hidden.
 
